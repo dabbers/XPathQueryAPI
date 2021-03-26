@@ -40,3 +40,6 @@ A sample result from thsi would look like:
     {"Open":85.40, "High":85.595, "Low":84.92}
 ]
 
+We can also select attributes by specifying "/@attributeName". So "/a/@href" would match the href attribute for '<a href="hello">Hi there</a>' returning "hello".
+
+Note that you must escape strings in query selectors. The language has support for TOP, WHERE, and SORT but those are not yet implemented. I'd also like to add support for constants and helper functions like STRLEN, REVERSE, SPLIT, other string functions, as well as support basic math.
